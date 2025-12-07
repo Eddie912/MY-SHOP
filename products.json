@@ -2,435 +2,497 @@
   {
     "id": 1,
     "name": "卫生棺",
-    "price": 190,
+    "price": 190.0,
     "image": "images/卫生棺.jpg",
-    "category": "funeral_supplies"
+    "category": "funeral_supplies",
+    "unit": "个"
   },
   {
     "id": 2,
     "name": "天堂礼花（1米）",
-    "price": 20,
+    "price": 20.0,
     "image": "images/天堂礼花（1米）.jpg",
-    "category": "funeral_supplies"
+    "category": "funeral_supplies",
+    "unit": "支"
   },
   {
     "id": 3,
     "name": "陶瓷纤维毯",
-    "price": 26,
+    "price": 26.0,
     "image": "images/陶瓷纤维毯.jpg",
-    "category": "funeral_supplies"
+    "category": "funeral_supplies",
+    "unit": "床"
   },
   {
     "id": 4,
     "name": "望山钱纸",
-    "price": 20,
+    "price": 20.0,
     "image": "images/望山钱纸.jpg",
-    "category": "funeral_supplies"
+    "category": "funeral_supplies",
+    "unit": "串"
   },
   {
     "id": 5,
     "name": "A3相框",
-    "price": 27,
+    "price": 27.0,
     "image": "images/A3相框.jpg",
-    "category": "funeral_supplies"
+    "category": "funeral_supplies",
+    "unit": "个"
   },
   {
     "id": 6,
     "name": "A4相框",
-    "price": 22,
+    "price": 22.0,
     "image": "images/A4相框.jpg",
-    "category": "funeral_supplies"
+    "category": "funeral_supplies",
+    "unit": "个"
   },
   {
     "id": 7,
     "name": "托盘",
-    "price": 28,
+    "price": 28.0,
     "image": "images/托盘.jpg",
-    "category": "funeral_supplies"
+    "category": "funeral_supplies",
+    "unit": "套"
   },
   {
     "id": 8,
     "name": "送明灯笼",
-    "price": 25,
+    "price": 25.0,
     "image": "images/送明灯笼.jpg",
-    "category": "funeral_supplies"
+    "category": "funeral_supplies",
+    "unit": "对"
   },
   {
     "id": 9,
     "name": "遗体卫生袋",
-    "price": 50,
+    "price": 50.0,
     "image": "images/遗体卫生袋.jpg",
-    "category": "funeral_supplies"
+    "category": "funeral_supplies",
+    "unit": "根"
   },
   {
     "id": 10,
     "name": "灵幡",
-    "price": 13,
+    "price": 13.0,
     "image": "images/灵幡.jpg",
-    "category": "funeral_supplies"
+    "category": "funeral_supplies",
+    "unit": "个"
   },
   {
     "id": 11,
     "name": "袋香",
-    "price": 0,
+    "price": 0.8,
     "image": "images/袋香.jpg",
-    "category": "funeral_supplies"
+    "category": "funeral_supplies",
+    "unit": "袋"
   },
   {
     "id": 12,
     "name": "平安香",
-    "price": 1,
+    "price": 1.0,
     "image": "images/平安香.jpg",
-    "category": "funeral_supplies"
+    "category": "funeral_supplies",
+    "unit": "袋"
   },
   {
     "id": 13,
     "name": "小白花",
-    "price": 0,
+    "price": 0.1,
     "image": "images/小白花.jpg",
-    "category": "funeral_supplies"
+    "category": "funeral_supplies",
+    "unit": "朵"
   },
   {
     "id": 14,
     "name": "奠字方巾",
-    "price": 4,
+    "price": 4.0,
     "image": "images/奠字方巾.jpg",
-    "category": "funeral_supplies"
+    "category": "funeral_supplies",
+    "unit": "张"
   },
   {
     "id": 15,
     "name": "骨灰收集袋",
-    "price": 4,
+    "price": 4.0,
     "image": "images/骨灰收集袋.jpg",
-    "category": "funeral_supplies"
+    "category": "funeral_supplies",
+    "unit": "根"
   },
   {
     "id": 16,
     "name": "酥油（2公升）",
-    "price": 28,
+    "price": 28.0,
     "image": "images/酥油（2公升）.jpg",
-    "category": "funeral_supplies"
+    "category": "funeral_supplies",
+    "unit": "瓶"
   },
   {
     "id": 17,
     "name": "保护罩",
-    "price": 90,
+    "price": 90.0,
     "image": "images/保护罩.jpg",
-    "category": "funeral_supplies"
+    "category": "funeral_supplies",
+    "unit": "个"
   },
   {
     "id": 18,
     "name": "护灵灯笼花",
-    "price": 10,
+    "price": 10.0,
     "image": "images/护灵灯笼花.jpg",
-    "category": "funeral_supplies"
+    "category": "funeral_supplies",
+    "unit": "对"
   },
   {
     "id": 19,
     "name": "三天酥油斗烛",
-    "price": 27,
+    "price": 27.0,
     "image": "images/三天酥油斗烛.jpg",
-    "category": "funeral_supplies"
+    "category": "funeral_supplies",
+    "unit": "对"
   },
   {
     "id": 20,
     "name": "骨灰识别牌",
-    "price": 25,
+    "price": 25.0,
     "image": "images/骨灰识别牌.jpg",
-    "category": "funeral_supplies"
+    "category": "funeral_supplies",
+    "unit": "个"
   },
   {
     "id": 21,
     "name": "平安带",
-    "price": 0,
+    "price": 0.7,
     "image": "images/平安带.jpg",
-    "category": "funeral_supplies"
+    "category": "funeral_supplies",
+    "unit": "根"
   },
   {
     "id": 22,
     "name": "黄绸感恩被",
-    "price": 100,
+    "price": 100.0,
     "image": "images/黄绸感恩被.jpg",
-    "category": "funeral_supplies"
+    "category": "funeral_supplies",
+    "unit": "床"
   },
   {
     "id": 23,
     "name": "骨灰防潮剂",
-    "price": 3,
+    "price": 3.5,
     "image": "images/骨灰防潮剂.jpg",
-    "category": "funeral_supplies"
+    "category": "funeral_supplies",
+    "unit": "袋"
   },
   {
     "id": 24,
     "name": "黑伞",
-    "price": 20,
+    "price": 20.0,
     "image": "images/黑伞.jpg",
-    "category": "funeral_supplies"
+    "category": "funeral_supplies",
+    "unit": "把"
   },
   {
     "id": 25,
     "name": "大白花",
-    "price": 4,
+    "price": 4.0,
     "image": "images/大白花.jpg",
-    "category": "funeral_supplies"
+    "category": "funeral_supplies",
+    "unit": "朵"
   },
   {
     "id": 26,
     "name": "大相框花",
-    "price": 2,
+    "price": 2.0,
     "image": "images/大相框花（A3）.jpg",
-    "category": "funeral_supplies"
+    "category": "funeral_supplies",
+    "unit": "朵"
   },
   {
     "id": 27,
     "name": "小相框花",
-    "price": 1,
+    "price": 1.0,
     "image": "images/小相框花（A4）.jpg",
-    "category": "funeral_supplies"
+    "category": "funeral_supplies",
+    "unit": "朵"
   },
   {
     "id": 28,
     "name": "除味剂",
-    "price": 16,
+    "price": 16.0,
     "image": "images/遗体除味剂.jpg",
-    "category": "funeral_supplies"
+    "category": "funeral_supplies",
+    "unit": "瓶"
   },
   {
     "id": 29,
     "name": "龙香(1.8尺）",
     "price": 0.6,
     "image": "images/龙香(1.8尺）.jpg",
-    "category": "funeral_supplies"
+    "category": "funeral_supplies",
+    "unit": "柱"
   },
   {
     "id": 30,
     "name": "祈福香",
     "price": 0.8,
     "image": "images/祈福香.jpg",
-    "category": "funeral_supplies"
+    "category": "funeral_supplies",
+    "unit": "袋"
   },
   {
     "id": 31,
     "name": "祈福灯蜡",
-    "price": 0,
+    "price": 0.7,
     "image": "images/祈福灯蜡.jpg",
-    "category": "funeral_supplies"
+    "category": "funeral_supplies",
+    "unit": "个"
   },
   {
     "id": 32,
     "name": "防风长明灯",
-    "price": 22,
+    "price": 22.0,
     "image": "images/防风长明灯.jpg",
-    "category": "funeral_supplies"
+    "category": "funeral_supplies",
+    "unit": "个"
   },
   {
     "id": 33,
     "name": "A4打印纸",
-    "price": 20,
+    "price": 20.0,
     "image": "images/A4打印纸.jpg",
-    "category": "funeral_supplies"
+    "category": "funeral_supplies",
+    "unit": "包"
   },
   {
     "id": 34,
     "name": "1520写真纸",
-    "price": 270,
+    "price": 270.0,
     "image": "images/1520写真纸.jpg",
-    "category": "funeral_supplies"
+    "category": "funeral_supplies",
+    "unit": "卷"
   },
   {
     "id": 35,
     "name": "A5打印纸",
-    "price": 13,
+    "price": 13.0,
     "image": "images/A5打印纸.jpg",
-    "category": "funeral_supplies"
+    "category": "funeral_supplies",
+    "unit": "包"
   },
   {
     "id": 36,
     "name": "写真机墨水-黑色（BK）",
-    "price": 110,
+    "price": 110.0,
     "image": "images/写真机黑色墨水.jpg",
-    "category": "funeral_supplies"
+    "category": "funeral_supplies",
+    "unit": "瓶"
   },
   {
     "id": 37,
     "name": "写真机墨水-黄色（Y）",
-    "price": 110,
+    "price": 110.0,
     "image": "images/写真机黄色墨水.jpg",
-    "category": "funeral_supplies"
+    "category": "funeral_supplies",
+    "unit": "瓶"
   },
   {
     "id": 38,
     "name": "写真机墨水-品红（M）",
-    "price": 110,
+    "price": 110.0,
     "image": "images/写真机红色墨水.jpg",
-    "category": "funeral_supplies"
+    "category": "funeral_supplies",
+    "unit": "瓶"
   },
   {
     "id": 39,
     "name": "写真机墨水-青色（C）",
-    "price": 110,
+    "price": 110.0,
     "image": "images/写真机青色墨水.jpg",
-    "category": "funeral_supplies"
+    "category": "funeral_supplies",
+    "unit": "瓶"
   },
   {
     "id": 40,
     "name": "南孚2号电池",
-    "price": 7,
+    "price": 7.0,
     "image": "images/南孚2号电池.jpg",
-    "category": "funeral_supplies"
+    "category": "funeral_supplies",
+    "unit": "节"
   },
   {
     "id": 41,
     "name": "南孚5号电池",
-    "price": 2,
+    "price": 2.0,
     "image": "images/南孚5号电池.jpg",
-    "category": "funeral_supplies"
+    "category": "funeral_supplies",
+    "unit": "节"
   },
   {
     "id": 42,
     "name": "南孚7号电池",
-    "price": 2,
+    "price": 2.0,
     "image": "images/南孚7号电池.jpg",
-    "category": "funeral_supplies"
+    "category": "funeral_supplies",
+    "unit": "节"
   },
   {
     "id": 43,
     "name": "封口胶",
-    "price": 9,
+    "price": 9.0,
     "image": "images/封口胶.jpg",
-    "category": "funeral_supplies"
+    "category": "funeral_supplies",
+    "unit": "卷"
   },
   {
     "id": 44,
     "name": "A3相纸",
-    "price": 20,
+    "price": 20.0,
     "image": "images/A3相纸.jpg",
-    "category": "funeral_supplies"
+    "category": "funeral_supplies",
+    "unit": "包"
   },
   {
     "id": 45,
     "name": "002黑色墨水",
-    "price": 70,
+    "price": 70.0,
     "image": "images/002黑色墨水.jpg",
-    "category": "funeral_supplies"
+    "category": "funeral_supplies",
+    "unit": "瓶"
   },
   {
     "id": 46,
     "name": "002红色墨水",
-    "price": 45,
+    "price": 45.0,
     "image": "images/002红色墨水.jpg",
-    "category": "funeral_supplies"
+    "category": "funeral_supplies",
+    "unit": "瓶"
   },
   {
     "id": 47,
     "name": "002青色墨水",
-    "price": 45,
+    "price": 45.0,
     "image": "images/002蓝色墨水.jpg",
-    "category": "funeral_supplies"
+    "category": "funeral_supplies",
+    "unit": "瓶"
   },
   {
     "id": 48,
     "name": "002黄色墨水",
-    "price": 45,
+    "price": 45.0,
     "image": "images/002黄色墨水.jpg",
-    "category": "funeral_supplies"
+    "category": "funeral_supplies",
+    "unit": "瓶"
   },
   {
     "id": 49,
     "name": "859黑色墨水",
-    "price": 90,
+    "price": 90.0,
     "image": "images/859黑色墨水.jpg",
-    "category": "funeral_supplies"
+    "category": "funeral_supplies",
+    "unit": "瓶"
   },
   {
     "id": 50,
     "name": "004黑色墨水",
-    "price": 32,
+    "price": 32.0,
     "image": "images/004黑色墨水.jpg",
-    "category": "funeral_supplies"
+    "category": "funeral_supplies",
+    "unit": "瓶"
   },
   {
     "id": 51,
     "name": "004蓝色墨水",
-    "price": 41,
+    "price": 41.0,
     "image": "images/004蓝色墨水.jpg",
-    "category": "funeral_supplies"
+    "category": "funeral_supplies",
+    "unit": "瓶"
   },
   {
     "id": 52,
     "name": "004红色墨水",
-    "price": 41,
+    "price": 41.0,
     "image": "images/004红色墨水.jpg",
-    "category": "funeral_supplies"
+    "category": "funeral_supplies",
+    "unit": "瓶"
   },
   {
     "id": 53,
     "name": "004黄色墨水",
-    "price": 41,
+    "price": 41.0,
     "image": "images/004黄色墨水.jpg",
-    "category": "funeral_supplies"
+    "category": "funeral_supplies",
+    "unit": "瓶"
   },
   {
     "id": 54,
     "name": "066黑色墨水",
-    "price": 100,
+    "price": 100.0,
     "image": "images/066黑色墨水.jpg",
-    "category": "funeral_supplies"
+    "category": "funeral_supplies",
+    "unit": "瓶"
   },
   {
     "id": 55,
     "name": "066红色墨水",
-    "price": 95,
+    "price": 95.0,
     "image": "images/066红色墨水.jpg",
-    "category": "funeral_supplies"
+    "category": "funeral_supplies",
+    "unit": "瓶"
   },
   {
     "id": 56,
     "name": "066蓝色墨水",
-    "price": 95,
+    "price": 95.0,
     "image": "images/066蓝色墨水.jpg",
-    "category": "funeral_supplies"
+    "category": "funeral_supplies",
+    "unit": "瓶"
   },
   {
     "id": 57,
     "name": "066黄色墨水",
-    "price": 95,
+    "price": 95.0,
     "image": "images/066黄色墨水.jpg",
-    "category": "funeral_supplies"
+    "category": "funeral_supplies",
+    "unit": "瓶"
   },
   {
     "id": 58,
     "name": "一次性PE手套",
-    "price": 0,
+    "price": 0.08,
     "image": "images/一次性PE手套.jpg",
-    "category": "funeral_supplies"
+    "category": "funeral_supplies",
+    "unit": "双"
   },
   {
     "id": 59,
     "name": "高邦橡胶手套",
-    "price": 2,
+    "price": 2.0,
     "image": "images/高邦橡胶手套.jpg",
-    "category": "funeral_supplies"
+    "category": "funeral_supplies",
+    "unit": "双"
   },
   {
     "id": 60,
     "name": "75度酒精",
-    "price": 5,
+    "price": 5.0,
     "image": "images/75度酒精.jpg",
-    "category": "funeral_supplies"
+    "category": "funeral_supplies",
+    "unit": "瓶"
   },
   {
     "id": 61,
     "name": "一次性手术衣",
-    "price": 4,
+    "price": 4.0,
     "image": "images/一次性手术衣.jpg",
-    "category": "funeral_supplies"
+    "category": "funeral_supplies",
+    "unit": "件"
   },
   {
     "id": 62,
     "name": "医用外科口罩",
-    "price": 0,
+    "price": 0.15,
     "image": "images/医用外科口罩.jpg",
-    "category": "funeral_supplies"
+    "category": "funeral_supplies",
+    "unit": "个"
   }
 ]

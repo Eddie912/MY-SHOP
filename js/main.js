@@ -491,7 +491,7 @@ function renderProducts() {
                 <img class="product-image lazy" src="https://cdn.jsdelivr.net/gh/Eddie912/MY-SHOP@main/${product.image}" alt="${product.name}">
             </div>
             <h3 class="product-name">${product.name}</h3>
-            <p class="product-price">¥${product.price.toFixed(2)}</p>
+            <p class="product-price">¥${product.price.toFixed(2)} / ${product.unit}</p>
             <div class="add-to-cart">
                 <input type="number" id="qty-${product.id}" min="1" value="1" class="quantity-input">
                 <button onclick="addToCart(${product.id})" class="add-cart-btn">加入购物车</button>
