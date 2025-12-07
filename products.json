@@ -8,9 +8,9 @@
   },
   {
     "id": 2,
-    "name": "天堂礼花",
+    "name": "天堂礼花（1米）",
     "price": 20,
-    "image": "images/天堂礼花.jpg",
+    "image": "images/天堂礼花（1米）.jpg",
     "category": "funeral_supplies"
   },
   {
@@ -106,9 +106,9 @@
   },
   {
     "id": 16,
-    "name": "酥油",
+    "name": "酥油（2公升）",
     "price": 28,
-    "image": "images/酥油.jpg",
+    "image": "images/酥油（2公升）.jpg",
     "category": "funeral_supplies"
   },
   {
@@ -127,9 +127,9 @@
   },
   {
     "id": 19,
-    "name": "三天酥油蜡",
+    "name": "三天酥油斗烛",
     "price": 27,
-    "image": "images/三天酥油蜡.jpg",
+    "image": "images/三天酥油斗烛.jpg",
     "category": "funeral_supplies"
   },
   {
@@ -178,34 +178,34 @@
     "id": 26,
     "name": "大相框花",
     "price": 2,
-    "image": "images/大相框花.jpg",
+    "image": "images/大相框花（A3）.jpg",
     "category": "funeral_supplies"
   },
   {
     "id": 27,
     "name": "小相框花",
     "price": 1,
-    "image": "images/小相框花.jpg",
+    "image": "images/小相框花（A4）.jpg",
     "category": "funeral_supplies"
   },
   {
     "id": 28,
     "name": "除味剂",
     "price": 16,
-    "image": "images/除味剂.jpg",
+    "image": "images/遗体除味剂.jpg",
     "category": "funeral_supplies"
   },
   {
     "id": 29,
-    "name": "龙香",
-    "price": 0,
-    "image": "images/龙香.jpg",
+    "name": "龙香(1.8尺）",
+    "price": 0.6,
+    "image": "images/龙香(1.8尺）.jpg",
     "category": "funeral_supplies"
   },
   {
     "id": 30,
     "name": "祈福香",
-    "price": 0,
+    "price": 0.8,
     "image": "images/祈福香.jpg",
     "category": "funeral_supplies"
   },
@@ -248,28 +248,28 @@
     "id": 36,
     "name": "写真机墨水-黑色（BK）",
     "price": 110,
-    "image": "images/写真机墨水-黑色（BK）.jpg",
+    "image": "images/写真机黑色墨水.jpg",
     "category": "funeral_supplies"
   },
   {
     "id": 37,
     "name": "写真机墨水-黄色（Y）",
     "price": 110,
-    "image": "images/写真机墨水-黄色（Y）.jpg",
+    "image": "images/写真机黄色墨水.jpg",
     "category": "funeral_supplies"
   },
   {
     "id": 38,
     "name": "写真机墨水-品红（M）",
     "price": 110,
-    "image": "images/写真机墨水-品红（M）.jpg",
+    "image": "images/写真机红色墨水.jpg",
     "category": "funeral_supplies"
   },
   {
     "id": 39,
     "name": "写真机墨水-青色（C）",
     "price": 110,
-    "image": "images/写真机墨水-青色（C）.jpg",
+    "image": "images/写真机青色墨水.jpg",
     "category": "funeral_supplies"
   },
   {
@@ -325,7 +325,7 @@
     "id": 47,
     "name": "002青色墨水",
     "price": 45,
-    "image": "images/002青色墨水.jpg",
+    "image": "images/002蓝色墨水.jpg",
     "category": "funeral_supplies"
   },
   {
@@ -351,16 +351,16 @@
   },
   {
     "id": 51,
-    "name": "004青色墨水",
+    "name": "004蓝色墨水",
     "price": 41,
-    "image": "images/004青色墨水.jpg",
+    "image": "images/004蓝色墨水.jpg",
     "category": "funeral_supplies"
   },
   {
     "id": 52,
-    "name": "004洋红墨水",
+    "name": "004红色墨水",
     "price": 41,
-    "image": "images/004洋红墨水.jpg",
+    "image": "images/004红色墨水.jpg",
     "category": "funeral_supplies"
   },
   {
@@ -386,9 +386,9 @@
   },
   {
     "id": 56,
-    "name": "066青色墨水",
+    "name": "066蓝色墨水",
     "price": 95,
-    "image": "images/066青色墨水.jpg",
+    "image": "images/066蓝色墨水.jpg",
     "category": "funeral_supplies"
   },
   {
@@ -407,9 +407,9 @@
   },
   {
     "id": 59,
-    "name": "高邦医用橡胶手套",
+    "name": "高邦橡胶手套",
     "price": 2,
-    "image": "images/高邦医用橡胶手套.jpg",
+    "image": "images/高邦橡胶手套.jpg",
     "category": "funeral_supplies"
   },
   {
