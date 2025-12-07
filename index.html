@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>四川安信顺企业管理资讯有限公司</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="images/logo.png" alt="商店Logo" class="site-logo">
+        </div>
+        <h1>四川安信顺企业管理资讯有限公司</h1>
+        <div class="header-right">
+            <div class="search-box">
+                <input type="text" id="search-input" placeholder="搜索商品...">
+                <button onclick="searchProducts()">搜索</button>
+            </div>
+            <a href="cart.html" class="cart-link">购物车 (<span id="cart-count">0</span>)</a >
+        </div>
+    </header>
+
+    <nav class="categories">
+        <button onclick="filterProducts('all')">全部商品</button>
+        <!-- <button onclick="filterProducts('electronics')">电子产品</button>
+        <button onclick="filterProducts('clothing')">服装</button>
+        <button onclick="filterProducts('books')">图书</button> -->
+    </nav>
+    
+    <main>
+        <div class="products">
+            <!-- 商品将通过JavaScript动态加载 -->
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>公司名称</h3>
+                <p>四川安信顺企业管理资讯有限公司</p >
+            </div>
+            <div class="footer-section">
+                <h3>联系我们</h3>
+                <p>地址: 四川省成都市武侯区临江西路7号1栋2层1号</p >
+                <p>电话: 400-123-4567</p >
+            </div>
+            <div class="footer-section">
+                <h3>营业时间</h3>
+                <p>周一至周五: 9:00 - 18:00</p >
+                <p>周末: 10:00 - 16:00</p >
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 四川安信顺企业管理资讯有限公司 版权所有</p >
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

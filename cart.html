@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>购物车</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="images/logo.png" alt="商店Logo" class="site-logo">
+        </div>
+        <h1>我的购物车</h1>
+        <a href="index.html" class="cart-link">继续购物</a >
+    </header>
+    
+    <main>
+        <div class="cart-items">
+            <!-- 购物车商品将通过JavaScript动态加载 -->
+        </div>
+        
+        <div class="order-form">
+            <h2>填写订单信息</h2>
+            <input type="text" id="name" placeholder="您的姓名" required style="width: 200px">
+            <input type="tel" id="phone" placeholder="您的电话" required style="width: 200px">
+            <button onclick="placeOrder()">提交订单</button>
+        </div>
+    </main>
+
+    <script src="js/cart.js"></script>
+</body>
+</html>
