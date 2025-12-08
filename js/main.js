@@ -488,7 +488,7 @@ function renderProducts() {
         productElement.className = 'product';
         productElement.innerHTML = `
             <div class="product-image-container">
-                <img class="product-image lazy" src="https://cdn.jsdelivr.net/gh/Eddie912/MY-SHOP@main/${product.image}" alt="${product.name}">
+                <img class="product-image lazy" src="https://anxinshun-1391206818.cos.ap-chengdu.myqcloud.com/${product.image}" alt="${product.name}">
             </div>
             <h3 class="product-name">${product.name}</h3>
             <p class="product-price">¥${product.price.toFixed(2)} / ${product.unit}</p>
