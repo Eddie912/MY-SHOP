@@ -210,7 +210,7 @@
   {
     "id": 27,
     "name": "小相框花",
-    "price": 1.0,
+    "price": 1.5,
     "image": "images/小相框花（A4）.jpg",
     "category": "funeral_supplies",
     "unit": "朵"
@@ -221,7 +221,7 @@
     "price": 16.0,
     "image": "images/遗体除味剂.jpg",
     "category": "funeral_supplies",
-    "unit": "瓶"
+    "unit": "袋"
   },
   {
     "id": 29,
@@ -245,7 +245,7 @@
     "price": 0.7,
     "image": "images/祈福灯蜡.jpg",
     "category": "funeral_supplies",
-    "unit": "个"
+    "unit": "粒"
   },
   {
     "id": 32,
@@ -253,7 +253,7 @@
     "price": 22.0,
     "image": "images/防风长明灯.jpg",
     "category": "funeral_supplies",
-    "unit": "个"
+    "unit": "盏"
   },
   {
     "id": 33,
@@ -322,7 +322,7 @@
   {
     "id": 41,
     "name": "南孚5号电池",
-    "price": 2.0,
+    "price": 2.1,
     "image": "images/南孚5号电池.jpg",
     "category": "funeral_supplies",
     "unit": "节"
@@ -330,7 +330,7 @@
   {
     "id": 42,
     "name": "南孚7号电池",
-    "price": 2.0,
+    "price": 2.1,
     "image": "images/南孚7号电池.jpg",
     "category": "funeral_supplies",
     "unit": "节"
@@ -466,7 +466,7 @@
   {
     "id": 59,
     "name": "高邦橡胶手套",
-    "price": 2.0,
+    "price": 2.5,
     "image": "images/高邦橡胶手套.jpg",
     "category": "funeral_supplies",
     "unit": "双"
