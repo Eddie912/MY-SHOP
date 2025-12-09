@@ -17,7 +17,7 @@
   },
   {
     "id": 3,
-    "name": "陶瓷纤维毯",
+    "name": "陶瓷纤维毯(2mm)",
     "price": 26.0,
     "image": "images/厚陶瓷纤维毯(2mm).jpg",
     "category": "funeral_supplies",
@@ -494,5 +494,13 @@
     "image": "images/医用外科口罩.jpg",
     "category": "funeral_supplies",
     "unit": "个"
+  },
+   {
+    "id": 3,
+    "name": "陶瓷纤维毯(3mm)",
+    "price": 26.0,
+    "image": "images/厚陶瓷纤维毯(3mm).jpg",
+    "category": "funeral_supplies",
+    "unit": "床"
   }
 ]
