@@ -12,7 +12,6 @@ function renderCart() {
     }
 
     let total = 0;
-    console.log('当前购物车内容：', cart);
     cart.forEach(item => {
         const itemElement = document.createElement('div');
         itemElement.className = 'cart-item';
@@ -84,7 +83,6 @@ async function placeOrder() {
 
     const total = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
     const tableHtml = buildHtmlTable(cart);
-    console.log('构建的表格HTML：', tableHtml);
     let content = '';
     content += `<div><h3>订单总价：¥${total.toFixed(2)}</h3>`;
     content += `<h4>商品明细：</h4>${tableHtml}`;
