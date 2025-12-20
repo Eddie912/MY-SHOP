@@ -56,45 +56,52 @@ async function placeOrder() {
 
     const total = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
     let content = '';
-    // 订单基础信息
-    content += `联系电话：${phone}\n`;
-    content += `订单总价：¥${total.toFixed(2)}\n\n`;
-    // 商品列表（每行一个商品，换行显示）
-    content += `商品明细：\n`;
+    content += `订单总价：¥${total.toFixed(2)}<br><br>\r\n\r\n`; // 替换\n为\r\n
+    content += `商品明细：<br>\r\n`;
     cart.forEach(item => {
-        content += `• ${item.name} - 单价¥${item.price} × 数量${item.quantity} = 小计¥${item.price * item.quantity}\n`;
+        content += `• ${item.name} - 单价¥ ${item.price} × 数量 ${item.quantity} = 小计¥ ${item.price * item.quantity}<br>\r\n`;
     });
 
-    const aokSendConfig = {
-        app_key: '773ac45630557143b0496fff35931363', // 替换为实际密钥
-        template_id: 'E_136255352119', // 替换为实际模板ID
-        to: 'rycedison@gmail.com', // 你要接收订单的邮箱
-        alias: '订单通知', // 发件人名称
-        data: {
-            username: name, // 用户名
-            contactemail: phone,
-            content: content, // 订单内容（带换行）
-            time: new Date().toLocaleString() // 提交时间
-        }
-    };
-
     try {
-        const response = await fetch('https://www.aoksend.com/index/api/send_email', {
+        // 1. 拼接URL参数（官方样例方式）
+        const baseUrl = 'https://www.aoksend.com/index/api/send_email';
+        const urlParams = new URLSearchParams({
+            app_key: '773ac45630557143b0496fff35931363',
+            template_id: 'E_136255352119',
+            to: 'anxinshun@126.com',
+            alias: '订单通知' // 可选参数也拼到URL里
+        });
+        const fullUrl = `${baseUrl}?${urlParams.toString()}`;
+
+        // 2. 构造请求体（传递data参数，需转成URL编码格式）
+        const formData = new URLSearchParams();
+        formData.append('data', JSON.stringify({
+            username: name,
+            content: content,
+            time: new Date().toLocaleString()
+        }));
+
+        // 3. 按官方样例的fetch格式请求
+        const response = await fetch(fullUrl, {
             method: 'POST',
+            redirect: 'follow', // 官方样例的redirect配置
             headers: {
-                'Content-Type': 'application/json' 
+                'Content-Type': 'application/x-www-form-urlencoded' // 适配form-data格式
             },
-            data:{
-                app_key: aokSendConfig.app_key,
-                template_id: aokSendConfig.template_id,
-                to: aokSendConfig.to,
-                alias: aokSendConfig.alias,
-                data: aokSendConfig.data
-            }
+            body: formData.toString() // 请求体传data参数
         });
 
-        const result = await response.json();
-        if (result.code === 200) { 
+        // 4. 解析响应（按官方样例先转文本）
+        const resultText = await response.text();
+        let result;
+        try {
+            result = JSON.parse(resultText); // 尝试转JSON
+        } catch (e) {
+            result = { code: -1, msg: resultText }; // 非JSON则直接存文本
+        }
+
+        // 5. 原有结果处理逻辑（不变）
+        if (result.code === 200) {
             cart = [];
             localStorage.setItem('cart', JSON.stringify(cart));
             alert('订单已提交！我们会尽快与您联系。');
