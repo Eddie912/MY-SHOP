@@ -12,7 +12,7 @@ function renderCart() {
     }
 
     let total = 0;
-
+    console.log('当前购物车内容：', cart);
     cart.forEach(item => {
         const itemElement = document.createElement('div');
         itemElement.className = 'cart-item';
@@ -44,6 +44,34 @@ function removeFromCart(productId) {
     renderCart();
 }
 
+// 将数据转为安全的 HTML 文本
+function escapeHtml(s) {
+    return String(s)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#39;');
+}
+
+// 把购物车内容构造成 HTML 表格，方便在邮件里渲染
+function buildHtmlTable(items) {
+    if (!Array.isArray(items) || items.length === 0) {
+        return '<p>购物车为空</p>';
+    }
+    const style = 'border:1px solid #ddd;padding:8px;text-align:left;';
+    const header = `<tr><th style="${style}">名称</th><th style="${style}">单位</th><th style="${style}">单价</th><th style="${style}">数量</th><th style="${style}">小计</th></tr>`;
+    const rows = items.map(item => {
+        const name = escapeHtml(item.name);
+        const unit = escapeHtml(item.unit || '');
+        const price = escapeHtml((item.price || 0).toFixed ? item.price.toFixed(2) : String(item.price));
+        const qty = escapeHtml(String(item.quantity || 0));
+        const subtotal = escapeHtml(((item.price || 0) * (item.quantity || 0)).toFixed(2));
+        return `<tr><td style="${style}">${name}</td><td style="${style}">${unit}</td><td style="${style}">¥${price}</td><td style="${style}">${qty}</td><td style="${style}">¥${subtotal}</td></tr>`;
+    }).join('');
+    return `<table style="border-collapse:collapse;border:1px solid #ddd;font-family:Arial,Helvetica,sans-serif;font-size:14px;">${header}${rows}</table>`;
+}
+
 // 提交订单
 async function placeOrder() {
     const name = document.getElementById('name').value;
@@ -55,12 +83,12 @@ async function placeOrder() {
     }
 
     const total = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+    const tableHtml = buildHtmlTable(cart);
+    console.log('构建的表格HTML：', tableHtml);
     let content = '';
-    content += `订单总价：¥${total.toFixed(2)}<br><br>\r\n\r\n`; // 替换\n为\r\n
-    content += `商品明细：<br>\r\n`;
-    cart.forEach(item => {
-        content += `• ${item.name} - 单价¥ ${item.price} × 数量 ${item.quantity} = 小计¥ ${item.price * item.quantity}<br>\r\n`;
-    });
+    content += `<div><h3>订单总价：¥${total.toFixed(2)}</h3>`;
+    content += `<h4>商品明细：</h4>${tableHtml}`;
+    content += `</div>`;
 
     try {
         // 1. 拼接URL参数（官方样例方式）
@@ -77,6 +105,7 @@ async function placeOrder() {
         const formData = new URLSearchParams();
         formData.append('data', JSON.stringify({
             username: name,
+            contactemail: phone,
             content: content,
             time: new Date().toLocaleString()
         }));

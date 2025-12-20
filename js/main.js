@@ -570,6 +570,7 @@ function addToCart(productId) {
             id: product.id,
             name: product.name,
             price: product.price,
+            unit: product.unit,
             quantity: quantity
         });
     }
