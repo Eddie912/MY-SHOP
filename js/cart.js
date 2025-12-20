@@ -45,7 +45,7 @@ function removeFromCart(productId) {
 }
 
 // 提交订单
-function placeOrder() {
+async function placeOrder() {
     const name = document.getElementById('name').value;
     const phone = document.getElementById('phone').value;
 
@@ -54,31 +54,61 @@ function placeOrder() {
         return;
     }
 
-    // 计算总价
     const total = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
-
-    // 构建邮件内容
-    let emailContent = `新订单:\n\n`;
-    emailContent += `客户信息:\n姓名: ${name}\n电话: ${phone}\n\n`;
-    emailContent += `订单详情:\n`;
-
+    let content = '';
+    // 订单基础信息
+    content += `联系电话：${phone}\n`;
+    content += `订单总价：¥${total.toFixed(2)}\n\n`;
+    // 商品列表（每行一个商品，换行显示）
+    content += `商品明细：\n`;
     cart.forEach(item => {
-        emailContent += `${item.name} - ¥${item.price} × ${item.quantity} = ¥${item.price * item.quantity}\n`;
+        content += `• ${item.name} - 单价¥${item.price} × 数量${item.quantity} = 小计¥${item.price * item.quantity}\n`;
     });
 
-    emailContent += `\n总计: ¥${total}`;
+    const aokSendConfig = {
+        app_key: '773ac45630557143b0496fff35931363', // 替换为实际密钥
+        template_id: 'E_136255352119', // 替换为实际模板ID
+        to: 'rycedison@gmail.com', // 你要接收订单的邮箱
+        alias: '订单通知', // 发件人名称
+        data: {
+            username: name, // 用户名
+            contactemail: phone,
+            content: content, // 订单内容（带换行）
+            time: new Date().toLocaleString() // 提交时间
+        }
+    };
 
-    // 使用mailto发送邮件
-    const subject = encodeURIComponent(`新订单 - ${name}`);
-    const body = encodeURIComponent(emailContent);
-    window.location.href = `mailto:你的邮箱@example.com?subject=${subject}&body=${body}`;
+    try {
+        const response = await fetch('https://www.aoksend.com/index/api/send_email', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json' 
+            },
+            data:{
+                app_key: aokSendConfig.app_key,
+                template_id: aokSendConfig.template_id,
+                to: aokSendConfig.to,
+                alias: aokSendConfig.alias,
+                data: aokSendConfig.data
+            }
+        });
 
-    // 清空购物车
-    cart = [];
-    localStorage.setItem('cart', JSON.stringify(cart));
-    alert('订单已提交！我们会尽快与您联系。');
-    window.location.href = 'index.html';
+        const result = await response.json();
+        if (result.code === 200) { 
+            cart = [];
+            localStorage.setItem('cart', JSON.stringify(cart));
+            alert('订单已提交！我们会尽快与您联系。');
+            window.location.href = 'index.html';
+        } else {
+            alert('订单提交失败：' + (result.msg || '未知错误'));
+        }
+    } catch (error) {
+        console.error('调用AokSend失败：', error);
+        alert('网络异常，请稍后重试！');
+    }
 }
+
 
 // 页面加载时渲染购物车
 document.addEventListener('DOMContentLoaded', renderCart);
+
